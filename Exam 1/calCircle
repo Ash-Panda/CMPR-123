@@ -1,0 +1,30 @@
+//question 4
+//Student Name: Achraf El Khatib
+//student ID: 
+public class calCircle extends Circles
+{
+	public circle()
+	{
+		raduis = 1;
+		centerX = 0;
+		centerY = 0;
+	}
+	public getDistance(circle a, circle b)
+	{
+		return Math.sqrt(((b.centerX - a.centerX)^(b.centerX - a.centerX)) + ((b.centerY - a.centerY)^(b.centerY - a.centerY)));
+	}
+	
+	public getArea(int getRaduis)
+	{
+		raduis = getRaduis;
+		area = 3.14 * raduis * raduis;
+		return area;
+		
+	}
+	
+protected int raduis;
+protected int centerX;
+protected int centerY;
+protected double area;
+
+}
